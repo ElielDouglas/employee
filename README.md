@@ -51,7 +51,13 @@ tudo isto está na minha lista de estudos.
 em relação ao 4 passo do desafio, optei por não continuar, devido a complexidade que encontrei na docker ainda no 3 passo.
 
 
+Para iniciar o serviço, com a imagem docker criada
 
+`docker start pgcognum`
+
+`yarn install` || `npm install`
+
+`yarn dev` || `npm run dev`
 
 
 
