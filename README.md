@@ -59,6 +59,10 @@ Para iniciar o serviço, com a imagem docker criada
 
 `yarn dev` || `npm run dev`
 
+os dados do banco estão no arquivo schema.sql
+
+enviei uma copia da coleção no postman para testar os endpoints.
+
 
 
 
