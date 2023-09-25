@@ -11,5 +11,5 @@ router.get('/employee/:id', EmployeeController.show); // Rota para listagem de a
 router.delete('/employee/:id', EmployeeController.delete); // Rota para deletar um usuario pelo seu ID
 router.post('/employee', EmployeeController.store); // Rota para criar um novo dado
 router.put('/employee/:id', EmployeeController.update); // Rota para atualizar um dado pelo seu ID
-router.get('/populate', EmployeeController.populate);
+router.get('/populate', EmployeeController.populate); // Rota para popular o banco.
 module.exports = router;

@@ -5,30 +5,30 @@ no qual fica apenas responsavel por chamar o metodo de dentro do repositorio em 
 Tambem foi usado SINGLETON , padrão que garante a existência de apenas uma instância de uma classe, mantendo um ponto global de acesso ao seu objeto, tanto o controller,routes, repository.
 
 Em relação ao banco, eu usei o POSTGRES, e confesso que no momento não entendi como gerar o arquivo "docker-compose" para baixar automaticamente na sua maquina.
-Porem eu utilizei os comandos 
+Porem eu utilizei os comandos
 
 `docker run --name pgcognum -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres`
 
 o comando acima iniciou um container docker e definiu as variaveis de ambiente necessárias para o postgres.
 
-Apos isso, utilizei 
+Apos isso, utilizei
 
 `docker exect -it pgcognum bash`
 
 para acessar o container de forma interativa no bash dele
 
-após isso usei 
+após isso usei
 
 `psql -U root`
 `CREATE DATABASE employes`
 
 para acessar o postgres e criar o banco necessario para aplicão rodar
 
-após isso acessei o banco com 
+após isso acessei o banco com
 
-`\c employes` 
+`\c employes`
 
-e após isso rodei 
+e após isso rodei
 
 `CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
 
@@ -42,9 +42,17 @@ Que servem para criar a tabela e utilizar o UUID generator do postgres, para ter
 
 o arquivo de rotas, contem todos os endpoints documentados , e o controller contem o metodo responsavel de cada rota.
 
+Eu adorei fazer o projeto, foi bem desafiador, e em relação as minhas dificuldades:
+1 - entender como gerar a mesma imagem docker do meu computador, para quem for utilizar na maquina deles,
+2 - talvez alterar o loop que utilizei para geração de usuarios, para alguma query mais especifica, ou outro metodo.
+
+tudo isto está na minha lista de estudos.
+
+em relação ao 4 passo do desafio, optei por não continuar, devido a complexidade que encontrei na docker ainda no 3 passo.
 
 
 
 
 
- 
+
+
