@@ -13,7 +13,6 @@ async function insertEmployee(employeeData) {
   return employee;
 }
 
-// Exporte a função se você estiver usando módulos (CommonJS, ES6 Modules, etc.)
 module.exports = {
   insertEmployee,
 };
