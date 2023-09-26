@@ -63,6 +63,7 @@ os dados do banco estão no arquivo schema.sql
 
 enviei uma copia da coleção no postman para testar os endpoints.
 
+PS: coloquei a nat - naturalidade , pra preencher o campo ROLE, visto que a api não fornece uma role dentro de sua resposta, a logica que eu usaria , caso existisse uma role, seria a mesma, apenas pra mostrar que sei trabalhar com os dados fornecidos.
 
 
 
