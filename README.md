@@ -44,7 +44,7 @@ o arquivo de rotas, contem todos os endpoints documentados , e o controller cont
 
 Eu adorei fazer o projeto, foi bem desafiador, e em relação as minhas dificuldades:
 1 - entender como gerar a mesma imagem docker do meu computador, para quem for utilizar na maquina deles,
-2 - talvez alterar o loop que utilizei para geração de usuarios, para alguma query mais especifica, ou outro metodo.
+2 - entender o docker .yml
 
 tudo isto está na minha lista de estudos.
 

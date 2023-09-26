@@ -110,12 +110,10 @@ class EmployeeController {
       const { data } = await axios.get('https://randomuser.me/api/?inc=gender,name,nat&results=10');
       const newUsers = data.results;
 
-      const results = [];
+      const results = await Promise.all(newUsers.map((user) => (
+        insert.insertEmployee(user)
+      )));
 
-      for (let i = 0; i < newUsers.length; i++) {
-        const resultRequest = await insert.insertEmployee(newUsers[i]);
-        results.push(resultRequest);
-      }
       res.json(results);
     } catch (error) {
       res.status(500).json({ error: 'Ocorreu um erro ao popular os dados.' });
